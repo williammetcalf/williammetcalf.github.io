@@ -6,7 +6,6 @@ import {
   PaperProps,
   Typography,
   styled,
-  useMediaQuery,
   useTheme,
 } from "@mui/material";
 import { FC } from "react";
@@ -16,7 +15,6 @@ export interface ContactInfoProps extends PaperProps {}
 const ContactInfo: FC<ContactInfoProps> = (props) => {
   const { palette } = useTheme();
   const { contrastText } = palette.primary;
-  const isPrint = useMediaQuery("not print");
 
   return (
     <StyledPaper {...props}>

@@ -30,7 +30,7 @@ const Hero: FC<HeroProps> = (props) => {
           <br />
           <br />I am a detail oriented developer who is not shy to step outside
           of realm of software development and contribute to improving UX or
-          analyzing business needs.
+          engage with users to understand their needs.
         </Typography>
       </Stack>
     </StyledPaper>

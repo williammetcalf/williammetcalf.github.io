@@ -1,4 +1,11 @@
-import { Box, CssBaseline, Stack, ThemeProvider, styled } from "@mui/material";
+import {
+  Box,
+  CssBaseline,
+  Paper,
+  Stack,
+  ThemeProvider,
+  styled,
+} from "@mui/material";
 import { CSSProperties, FC } from "react";
 import AreaFill from "./components/AreaFill";
 import ContactInfo from "./components/ContactInfo";
@@ -16,21 +23,23 @@ const App: FC = () => {
     <ThemeProvider theme={theme}>
       <CssBaseline />
       <PrintContextContainer>
-        <ResumeContainer spacing={1}>
-          <TopSection>
-            <LeftSpacer>
-              <AreaFill />
-            </LeftSpacer>
-            <Hero style={primaryColumnCss} />
-            <ContactInfo style={secondaryColumnCss} />
-            <CenterDot />
-          </TopSection>
-          <BottomSection>
-            <LeftSpacer />
-            <MyExperience style={primaryColumnCss} />
-            <MetaInfo style={secondaryColumnCss} />
-          </BottomSection>
-        </ResumeContainer>
+        <Paper elevation={15}>
+          <ResumeContainer spacing={1}>
+            <TopSection>
+              <LeftSpacer>
+                <AreaFill />
+              </LeftSpacer>
+              <Hero style={primaryColumnCss} />
+              <ContactInfo style={secondaryColumnCss} />
+              <CenterDot />
+            </TopSection>
+            <BottomSection>
+              <LeftSpacer />
+              <MyExperience style={primaryColumnCss} />
+              <MetaInfo style={secondaryColumnCss} />
+            </BottomSection>
+          </ResumeContainer>
+        </Paper>
       </PrintContextContainer>
     </ThemeProvider>
   );
@@ -43,7 +52,7 @@ const PrintContextContainer = styled(Box)(({ theme }) => ({
     justifyContent: "center",
     alignItems: "center",
     minHeight: "100vh",
-    backgroundColor: "#333",
+    backgroundColor: "#444",
   },
 }));
 

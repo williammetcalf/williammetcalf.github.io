@@ -25,6 +25,7 @@ const WorkExperience: FC = () => {
                 name={
                   <Box display="flex">
                     <Skeleton
+                      className="no-print-only"
                       width={75}
                       sx={{ marginRight: 1 }}
                       title="<Redacted>"
