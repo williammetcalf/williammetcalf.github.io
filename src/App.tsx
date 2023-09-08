@@ -73,7 +73,6 @@ const VerticalSection = styled(Box)(({ theme }) => ({
 }));
 
 const TopSection = styled(VerticalSection)({
-  height: "22%",
   position: "relative",
 });
 

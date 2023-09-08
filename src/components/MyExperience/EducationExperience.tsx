@@ -15,7 +15,7 @@ const EducationExperience: FC<EducationExperienceProps> = () => {
           description: (
             <>
               B.S. in Computer Science,{" "}
-              <i style={{ fontSize: "90%" }}>Magma cum Laude</i>
+              <i style={{ fontSize: "90%" }}>magna cum laude</i>
               <br />
               <span style={{ fontSize: "80%" }}>
                 Minors in Mathematics, Psychology
