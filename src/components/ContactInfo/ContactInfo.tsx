@@ -19,8 +19,18 @@ const ContactInfo: FC<ContactInfoProps> = (props) => {
   const isPrint = useMediaQuery("not print");
 
   return (
-    <StyledPaper sx={{ padding: 1 }} {...props}>
-      <RowBox display="flex">
+    <StyledPaper {...props}>
+      <RowBox display="flex" className="no-print-only">
+        <Email color="secondary" />
+        <Link
+          href="mailto:williamdmetcalf@gmail.com"
+          color={contrastText}
+          variant="body2"
+        >
+          williamdmetcalf@gmail.com
+        </Link>
+      </RowBox>
+      <RowBox display="flex" className="print-only">
         <Email color="secondary" />
         <Typography color={contrastText} variant="body2">
           williamdmetcalf@gmail.com
@@ -55,6 +65,8 @@ const ContactInfo: FC<ContactInfoProps> = (props) => {
 
 const StyledPaper = styled(Paper)(({ theme }) => ({
   height: "100%",
+  padding: theme.spacing(0.5),
+  border: `${theme.spacing(0.5)} solid ${theme.palette.primary.main}`,
   backgroundColor: theme.palette.primary.main,
   display: "flex",
   flexDirection: "column",
