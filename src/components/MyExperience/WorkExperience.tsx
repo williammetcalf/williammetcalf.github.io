@@ -18,7 +18,7 @@ const WorkExperience: FC = () => {
             <Stack spacing={1}>
               <WorkProjectItem
                 name="Design Studio"
-                description="Design Studio, a web app for Eli Lilly's clinical trial designers, empowers them to optimize trials for low cost, high enrollment, and minimal patient burden. I developed complex tables full of interrelated data, as well as a large code-cleanup effort of an old and poorly-written codebase."
+                description="Design Studio — a web app created for Eli Lilly's clinical trial designers — empowers them to optimize upcoming clinical trials for low cost, high enrollment rate, and minimal patient burden. I developed complex tables containing interrelated data, as well as lead a large code-cleanup effort for an old and poorly-written codebase."
                 tags={["React", "Node", "Postgres", "AWS"]}
               />
               <WorkProjectItem
@@ -33,12 +33,12 @@ const WorkExperience: FC = () => {
                     Clinical Trial Portal
                   </Box>
                 }
-                description="CTP, utilized by both patients and clinicians, facilitated the clinical trial of Lilly's <redacted name> drug. It integrated with patients' wearable medical devices to deliver near-real-time data for monitoring the experimental drug's efficacy."
+                description="CTP — utilized by both patients and clinicians — facilitated the clinical trial of Lilly's <redacted name> drug. It integrated with patients' wearable medical devices to deliver near-real-time data for monitoring the drug's efficacy."
                 tags={["React", "Node", "GraphQL", "AWS"]}
               />
               <WorkProjectItem
                 name="Polaris"
-                description="Polaris is a specialized tool utilized by Eli Lilly executives to oversee ongoing drug development and clinical trials. I designed and developed multiple complex bespoke visualiztions which allow users to better understand ongoing projects."
+                description="Polaris is a specialized tool utilized by Eli Lilly executives to oversee ongoing drug development and clinical trials. I designed and developed complex bespoke visualiztions which allow users to better understand ongoing projects."
                 tags={["React", "Node", "GraphQL", "Heroku"]}
               />
               <WorkProjectItem
