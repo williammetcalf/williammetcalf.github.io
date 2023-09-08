@@ -1,10 +1,12 @@
 import { Email, GitHub, PhoneIphone } from "@mui/icons-material";
 import {
   Box,
+  Link,
   Paper,
   PaperProps,
   Typography,
   styled,
+  useMediaQuery,
   useTheme,
 } from "@mui/material";
 import { FC } from "react";
@@ -14,6 +16,7 @@ export interface ContactInfoProps extends PaperProps {}
 const ContactInfo: FC<ContactInfoProps> = (props) => {
   const { palette } = useTheme();
   const { contrastText } = palette.primary;
+  const isPrint = useMediaQuery("not print");
 
   return (
     <StyledPaper sx={{ padding: 1 }} {...props}>
@@ -29,10 +32,21 @@ const ContactInfo: FC<ContactInfoProps> = (props) => {
           1 (217) 778-0263
         </Typography>
       </RowBox>
-      <RowBox display="flex">
+      <RowBox display="flex" className="no-print-only">
+        <GitHub color="secondary" />
+        <Link
+          href="https://github.com/williammetcalf"
+          target="__blank"
+          color={contrastText}
+          variant="body2"
+        >
+          github.com/williammetcalf
+        </Link>
+      </RowBox>
+      <RowBox display="flex" className="print-only">
         <GitHub color="secondary" />
         <Typography color={contrastText} variant="body2">
-          github.com/williammetcalf
+          williammetcalf.github.io
         </Typography>
       </RowBox>
     </StyledPaper>

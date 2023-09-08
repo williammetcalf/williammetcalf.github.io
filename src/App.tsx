@@ -6,6 +6,7 @@ import Hero from "./components/Hero/Hero";
 import MetaInfo from "./components/MetaInfo/MetaInfo";
 import MyExperience from "./components/MyExperience";
 import theme from "./config/theme";
+import "./index.css";
 
 const primaryColumnCss: CSSProperties = { flex: 1 };
 const secondaryColumnCss: CSSProperties = { width: "30%" };
@@ -14,7 +15,7 @@ const App: FC = () => {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <ContextContainer>
+      <PrintContextContainer>
         <ResumeContainer spacing={1}>
           <TopSection>
             <LeftSpacer>
@@ -30,12 +31,12 @@ const App: FC = () => {
             <MetaInfo style={secondaryColumnCss} />
           </BottomSection>
         </ResumeContainer>
-      </ContextContainer>
+      </PrintContextContainer>
     </ThemeProvider>
   );
 };
 
-const ContextContainer = styled(Box)(({ theme }) => ({
+const PrintContextContainer = styled(Box)(({ theme }) => ({
   "@media not print": {
     padding: theme.spacing(1),
     display: "flex",
