@@ -23,7 +23,7 @@ const App: FC = () => {
     <ThemeProvider theme={theme}>
       <CssBaseline />
       <PrintContextContainer>
-        <Paper elevation={15}>
+        <Paper elevation={15} style={{ margin: "auto" }}>
           <ResumeContainer spacing={1}>
             <TopSection>
               <LeftSpacer>
@@ -49,10 +49,11 @@ const PrintContextContainer = styled(Box)(({ theme }) => ({
   "@media not print": {
     padding: theme.spacing(1),
     display: "flex",
-    justifyContent: "center",
     alignItems: "center",
     minHeight: "100vh",
+    minWidth: "100vw",
     backgroundColor: "#444",
+    overflow: "auto",
   },
 }));
 
