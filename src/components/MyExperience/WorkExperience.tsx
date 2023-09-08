@@ -18,7 +18,7 @@ const WorkExperience: FC = () => {
             <Stack spacing={1}>
               <WorkProjectItem
                 name="Design Studio"
-                description="Design Studio — a web app created for Eli Lilly's clinical trial designers — empowers them to optimize upcoming clinical trials for low cost, high enrollment rate, and minimal patient burden. I developed complex tables containing interrelated data, as well as led a large code-cleanup effort for an old and poorly-written codebase."
+                description="Design Studio — a web app created for Eli Lilly's clinical trial designers — empowers them to optimize upcoming clinical trials for low cost, high enrollment rate, and minimal patient burden. I developed complex tables containing interrelated and modifiable data, as well as led a large code-cleanup effort for an old and poorly-written codebase."
                 tags={["React", "Node", "Postgres", "AWS"]}
               />
               <WorkProjectItem
