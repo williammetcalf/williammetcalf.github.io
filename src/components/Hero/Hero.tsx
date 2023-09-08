@@ -27,10 +27,22 @@ const Hero: FC<HeroProps> = (props) => {
         <Typography sx={{ marginTop: 1 }} variant="body2">
           Senior full-stack web developer looking for partially-remote work in
           Champaign, IL or fully-remote work elsewhere in the world.
-          <br />
-          <br />I am a detail oriented developer who is not shy to step outside
-          of realm of software development and contribute to improving UX or
-          engage with users to understand their needs.
+        </Typography>
+        <Typography
+          sx={(theme) => ({
+            marginTop: 1,
+            padding: 1,
+            textAlign: "center",
+            backgroundColor: theme.palette.grey[200],
+            borderRadius: theme.shape.borderRadius,
+          })}
+          variant="caption"
+        >
+          <i>
+            I am a detail oriented developer who is not shy to step outside of
+            realm of software development and contribute to improving UX or
+            engage with users to help understand their needs.
+          </i>
         </Typography>
       </Stack>
     </StyledPaper>
@@ -39,8 +51,8 @@ const Hero: FC<HeroProps> = (props) => {
 
 const StyledPaper = styled(Paper)(({ theme }) => ({
   height: "100%",
-  backgroundColor: theme.palette.grey[200],
-  border: `${theme.spacing(0.5)} solid ${theme.palette.grey[200]}`,
+  backgroundColor: theme.palette.grey[300],
+  border: `${theme.spacing(0.5)} solid ${theme.palette.grey[300]}`,
   padding: theme.spacing(0.5),
   display: "flex",
   flexWrap: "nowrap",

@@ -64,8 +64,8 @@ const MetaInfo: FC<MetaInfoProps> = (props) => {
 };
 
 const StyledPaper = styled(Paper)(({ theme }) => ({
-  backgroundColor: theme.palette.grey[200],
-  border: `${theme.spacing(0.5)} solid ${theme.palette.grey[200]}`,
+  backgroundColor: theme.palette.grey[300],
+  border: `${theme.spacing(0.5)} solid ${theme.palette.grey[300]}`,
   padding: theme.spacing(0.5),
 }));
 
